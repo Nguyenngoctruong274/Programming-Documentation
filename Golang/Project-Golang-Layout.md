@@ -1,5 +1,5 @@
 ## Project-Layout
-<my-microservices-app/
+my-microservices-app/
 ├── cmd/
 │   ├── user-service/
 │   │   └── main.go
@@ -59,4 +59,3 @@
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
->
