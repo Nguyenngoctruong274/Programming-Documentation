@@ -1,0 +1,3 @@
+## Repository Pattern
+ là một mẫu thiết kế phần mềm trong lập trình phần mềm. Nó được sử dụng để tạo ra một lớp trung gian (repository) để tương tác với các đối tượng dữ liệu của ứng dụng, giúp tách biệt lớp xử lý dữ liệu (data access layer) khỏi lớp logic kinh doanh (business logic layer). Mục tiêu chính của Repository Pattern là cung cấp một giao diện duy nhất để thao tác với dữ liệu, giảm sự phụ thuộc trực tiếp của lớp logic kinh doanh vào các cơ sở dữ liệu hoặc các nguồn dữ liệu khác.
+ [Microservicec]([http://https://vi.wikipedia.org/wiki/Markdown](https://miro.medium.com/v2/resize:fit:1400/1*XQS6j3Bdp1Fcl1EijAoUyQ.png))
