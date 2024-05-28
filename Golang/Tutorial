@@ -1,0 +1,8 @@
+## Get tag in struct
+type Student struct {
+	name string
+	subject []string `subject not contain physics`
+}
+tag := reflect.TypeOf(people)
+field, _ := tag.FieldByName("age")
+#NOTE: kiểu dữ liệu map khi copy sẽ truy xuất cùng vùng nhớ còn struct thì không, muốn truy xuất thì thêm &
