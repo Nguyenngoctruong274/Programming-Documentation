@@ -6,3 +6,29 @@ type Student struct {
 tag := reflect.TypeOf(people)
 field, _ := tag.FieldByName("age")
 #NOTE: kiểu dữ liệu map khi copy sẽ truy xuất cùng vùng nhớ còn struct thì không, muốn truy xuất thì thêm &
+--------------------------------------
+## Array & slice
+array khi copy mảng sẽ k thay đổi giá trị, còn slice thì trỏ tới địa chỉ nên khi thay đổi giá trị sẽ thay đổi mảng copy
+-------------------------------------
+##Switch
+fallthough sẽ xét các trường hợp còn lại
+##LOOP and break loop sẽ ngưng vòng lập
+-------------------------------------
+## Defer & Panic
+func panicker() {
+	fmt.Println("Create Panic")
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Println("ERROR: ", err)
+		}
+	}()
+	panic("chia cho mot so 0")
+}
+##Goroutine
+wg := sync.WaitGroup{}
+wg.Add()
+wg.Done()
+wg.Wait()
+m := sync.RWMutex{}
+m.RLock -> m.RUnlock
+m.Lock -> m.Unblock
